@@ -1,1 +1,3 @@
 # 591
+The goal of this project was to track the memory of a dataframe in the pandas library in python. To make sure every node conforms to the rules of the sub-language, it is necessary to override each relevant visit node function that is part of the built in ast library in python. To track the memory of a dataframe, each integer is assigned a value of 2 bytes, and each recursive call to the child node increases the count by the size of the integer. In the end, the total memory size is calculated.
+The class conforms() checks to see if the node follows the rules while infer_type() finds the memory usage.
